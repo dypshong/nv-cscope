@@ -1,4 +1,5 @@
 if vim.api.nvim_get_var('loaded_nv_cscope') then
+    return
 end
 
 vim.api.nvim_create_user_command('NvCscope', function(args)
