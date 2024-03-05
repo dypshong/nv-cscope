@@ -1,4 +1,4 @@
-if vim.g.loaded_nv_cscope != nil then
+if vim.g.loaded_nv_cscope ~= nil then
     return
 end
 
