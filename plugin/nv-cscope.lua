@@ -1,6 +1,4 @@
-print("!!!!!!!!")
-
-if vim.api.nvim_get_var('loaded_nv_cscope') then
+if vim.g.loaded_nv_cscope != nil then
     return
 end
 
@@ -14,4 +12,4 @@ end,
 })
 --command! -nargs=* -complete=customlist,v:lua.require'nv-cscope.completion' NvCscope lua require("nv-cscope").cscope(<args>)
 
-vim.api.nvim_set_var('loaded_nv_cscope')
+vim.g.loaded_nv_cscope = true
