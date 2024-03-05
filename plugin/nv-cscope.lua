@@ -1,3 +1,5 @@
+print("!!!!!!!!")
+
 if vim.api.nvim_get_var('loaded_nv_cscope') then
     return
 end
